@@ -33,7 +33,7 @@ module axi_arp(
 
     //  AXI-Lite write response channel
     output logic ctrl_s_axi_bvalid,
-    input logic ctrl_s_axi_bready
+    input logic ctrl_s_axi_bready,
 
     //  AXI-Lite read address channel
     input logic [31:0]ctrl_s_axi_araddr,
@@ -43,7 +43,7 @@ module axi_arp(
     //  AXI-Lite read data channel
     output logic [31:0]ctrl_s_axi_rdata,
     output logic ctrl_s_axi_rvalid,
-    output logic ctrl_s_axi_rready,
+    input logic ctrl_s_axi_rready,
 
     // Receive AXI-Stream interface
     input logic [63:0]rx_s_axis_tdata,
@@ -61,6 +61,8 @@ module axi_arp(
     input logic tx_s_axis_tready,
 
     // Cache BRAM control interface
+    output logic cache_bram_clk,
+    output logic cache_bram_aresetn,
     output logic cache_bram_en,
     output logic cache_bram_wen,
     output logic [7:0]cache_bram_addr,
