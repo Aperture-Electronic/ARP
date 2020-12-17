@@ -1,0 +1,2 @@
+# This file is automatically written.  Do not modify.
+proc gen_USERPARAMETER_AXI_CTRL_ADDRESS_WIDTH_VALUE {AXI_CTRL_REGISTER_COUNT } {expr $AXI_CTRL_REGISTER_COUNT}

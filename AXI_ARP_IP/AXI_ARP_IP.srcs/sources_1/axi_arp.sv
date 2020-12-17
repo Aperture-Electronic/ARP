@@ -1,5 +1,5 @@
 // System verilog file
-// Ethernet ARP control module
+// Ethernet ARP module
 // Features: 
 //  1. AXI-Lite control interface
 //  2. Standard AXI-Stream ethernet receive & transmit interface
@@ -15,14 +15,19 @@
     ===AXI-Lite=====[ctrl            clk/rst]---Vector------
 */
 
-module axi_arp(
+module axi_arp
+#(
+    parameter AXI_CTRL_REGISTER_COUNT = 13,
+    parameter AXI_CTRL_ADDRESS_WIDTH = $clog2(AXI_CTRL_REGISTER_COUNT)
+)
+(
     // Clock & reset
     input logic aclk,
     input logic aresetn,
 
     // Control AXI-Lite interface (Slave)
     //  AXI-Lite write address channel
-    input logic [31:0]ctrl_s_axi_awaddr,
+    input logic [AXI_CTRL_ADDRESS_WIDTH - 1:0]ctrl_s_axi_awaddr,
     input logic ctrl_s_axi_awvalid,
     output logic ctrl_s_axi_awready,
 
@@ -80,5 +85,49 @@ module axi_arp(
     output logic query_s_axi_rvalid,
     input logic query_s_axi_rready
 );
+
+    axi_arp_ctrl axi_ctrl
+    (
+        .*,
+        .global_enable(),
+        .global_auto_resp_en(),
+        .global_auto_cache_en(),
+        .global_cache_no_req_en(),
+        .global_timer_en(),
+        .global_auto_cache_timeout_en(),
+        .global_req_timeout_en(),
+        .global_req_resend(),
+
+        .status_requesting(),
+        .status_timeout(),
+        .status_resend_cnt(),
+        .status_responsed(),
+
+        .self_ip(),
+        .self_hw(),
+        .target_ip(),
+        .target_hw(),
+
+        .transmit_req(),
+        .transmit_annouce(),
+        .transmit_cancel(),
+
+        .timer_resetn(),
+        .timer_prediv(),
+
+        .timer_counter(),
+
+        .transmit_timeout(),
+
+        .cache_crc_poly(),
+        .cache_crc_init(),
+        .cache_crc_xor(),
+        .cache_crc_inrev(),
+        .cache_crc_outrev(),
+
+        .cache_timeout()
+    );
+    
+    defparam axi_ctrl.AXI_ADDRESS_WIDTH = AXI_CTRL_ADDRESS_WIDTH;
 
 endmodule
