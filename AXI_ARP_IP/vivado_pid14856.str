@@ -1,0 +1,103 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 14856
+License: Customer
+
+Current time: 	Fri Dec 18 13:02:22 CST 2020
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Development/Vitis/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Development/Vitis/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Apert
+User home directory: C:/Users/Apert
+User working directory: C:/Projects/IPCores/Ethernet/ARP/AXI_ARP_IP
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Development/Vitis/Vivado
+HDI_APPROOT: C:/Development/Vitis/Vivado/2020.1
+RDI_DATADIR: C:/Development/Vitis/Vivado/2020.1/data
+RDI_BINDIR: C:/Development/Vitis/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/Apert/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/Apert/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/Apert/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/Development/Vitis/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Projects/IPCores/Ethernet/ARP/AXI_ARP_IP/vivado.log
+Vivado journal file location: 	C:/Projects/IPCores/Ethernet/ARP/AXI_ARP_IP/vivado.jou
+Engine tmp dir: 	C:/Projects/IPCores/Ethernet/ARP/AXI_ARP_IP/.Xil/Vivado-14856-APERLAPTOP
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Development/Vitis/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/Development/Vitis/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Development/Vitis/Vivado/2020.1
+XILINX_SDK: C:/Development/Vitis/Vitis/2020.1
+XILINX_VITIS: C:/Development/Vitis/Vitis/2020.1
+XILINX_VIVADO: C:/Development/Vitis/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/Development/Vitis/Vivado/2020.1
+
+
+GUI allocated memory:	161 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 980 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Projects\IPCores\Ethernet\ARP\AXI_ARP_IP\AXI_ARP_IP.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Projects/IPCores/Ethernet/ARP/AXI_ARP_IP/AXI_ARP_IP.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 980 MB. GUI used memory: 53 MB. Current time: 12/18/20, 1:02:23 PM CST
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Projects/IPCores/Ethernet/ARP/AXI_ARP_IP/AXI_ARP_IP.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'B:/Verilog IPs/Ethernet/ARP/ARP/AXI_ARP_IP' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 100 MB (+101902kb) [00:00:17]
+// [Engine Memory]: 980 MB (+876452kb) [00:00:17]
+// WARNING: HEventQueue.dispatchEvent() is taking  4366 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Development/Vitis/Vivado/2020.1/data/ip'. 
+// [GUI Memory]: 118 MB (+14257kb) [00:00:21]

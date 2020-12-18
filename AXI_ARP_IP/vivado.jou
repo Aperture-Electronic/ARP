@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Dec 18 13:01:41 2020
+# Process ID: 14856
+# Current directory: C:/Projects/IPCores/Ethernet/ARP/AXI_ARP_IP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3776 C:\Projects\IPCores\Ethernet\ARP\AXI_ARP_IP\AXI_ARP_IP.xpr
+# Log file: C:/Projects/IPCores/Ethernet/ARP/AXI_ARP_IP/vivado.log
+# Journal file: C:/Projects/IPCores/Ethernet/ARP/AXI_ARP_IP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Projects/IPCores/Ethernet/ARP/AXI_ARP_IP/AXI_ARP_IP.xpr

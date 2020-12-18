@@ -18,7 +18,7 @@
 module axi_arp
 #(
     parameter AXI_CTRL_REGISTER_COUNT = 13,
-    parameter AXI_CTRL_ADDRESS_WIDTH = $clog2(AXI_CTRL_REGISTER_COUNT)
+    parameter AXI_CTRL_ADDRESS_WIDTH = $clog2(AXI_CTRL_REGISTER_COUNT * 4)
 )
 (
     // Clock & reset
@@ -58,12 +58,12 @@ module axi_arp
     input logic rx_s_axis_tlast,
 
     // Transmit AXI-Stream interface
-    output logic [63:0]tx_s_axis_tdata,
-    output logic [7:0]tx_s_axis_tkeep,
-    output logic tx_s_axis_tvalid,
-    output logic tx_s_axis_tuser,
-    output logic tx_s_axis_tlast,
-    input logic tx_s_axis_tready,
+    output logic [63:0]tx_m_axis_tdata,
+    output logic [7:0]tx_m_axis_tkeep,
+    output logic tx_m_axis_tvalid,
+    output logic tx_m_axis_tuser,
+    output logic tx_m_axis_tlast,
+    input logic tx_m_axis_tready,
 
     // Cache BRAM control interface
     output logic cache_bram_clk,
@@ -129,5 +129,18 @@ module axi_arp
     );
     
     defparam axi_ctrl.AXI_ADDRESS_WIDTH = AXI_CTRL_ADDRESS_WIDTH;
+    
+    axi_arp_transmit transmiter
+    (
+        .*,
+        .self_ip(),
+        .self_hw(),
+        .target_ip(),
+        .target_hw(),
+        .arp_opcode(),
+        
+        .request_transmit(),
+        .req_transmitting()
+    );
 
 endmodule
